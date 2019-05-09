@@ -41,12 +41,14 @@ public class HangmanMain {
             guess = in.next().charAt(0);
 
             boolean isCharInTheWord = false;
+            //this is loop where where correct guesses are putted into the word to guess
             for (int i = 0; i < wordToGuess.length(); i++) {
                 if (charToString[i] == Character.toUpperCase(guess)) {
                     censorship[i] = Character.toUpperCase(guess);
                     isCharInTheWord = true;
                 }
             }
+            //this condition checks if we guessed correct or incorrect letter
             if (!isCharInTheWord) {
                 System.out.println("You guessed wrong letter.");
                 printHangman();
