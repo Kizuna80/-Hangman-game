@@ -64,9 +64,9 @@ public class HangmanMain {
                 System.out.println("You guessed whole secret word correctly.");
                 playing = false;
             }
-            if(!playing){
-                System.out.println("Do you want try again?");
-            }
+//            if(!playing){
+//                System.out.println("Do you want try again?");
+//            }
         }
     }
 
