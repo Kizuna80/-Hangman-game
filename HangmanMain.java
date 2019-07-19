@@ -29,8 +29,8 @@ public class HangmanMain {
         System.out.println(censorship);
 
         //main loop
-        boolean play = true;
-        while (play) {
+        boolean endOfTheGameCondition = true;
+        while (endOfTheGameCondition) {
 
             for (int i = 0; i < wordToGuess.length(); i++) {
                 System.out.print(censorship[i]);
@@ -59,10 +59,10 @@ public class HangmanMain {
             }
             if(count == 15){
                 System.out.println("Game Over");
-                play = false;
+                endOfTheGameCondition = false;
             }else if(String.valueOf(censorship).equals(wordToGuess)){
                 System.out.println("You guessed whole secret word correctly.");
-                play = false;
+                endOfTheGameCondition = false;
             }
 //            if(!playing){
 //                System.out.println("Do you want try again?");
